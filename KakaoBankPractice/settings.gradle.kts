@@ -23,3 +23,4 @@ rootProject.name = "KakaoBankPractice"
 include(":app")
 include(":core:util")
 include(":domain")
+include(":data")
