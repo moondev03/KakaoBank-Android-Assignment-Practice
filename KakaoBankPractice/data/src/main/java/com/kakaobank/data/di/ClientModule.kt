@@ -41,7 +41,7 @@ class ClientModule {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
             .client(okHttpClient)
-            .baseUrl(BuildConfig.BASE_URL)
+            .baseUrl(BuildConfig.KAKAO_API_URL)
             .build()
     }
 }

@@ -19,7 +19,16 @@ android {
 
         val properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
-        buildConfigField("String", "BASE_URL", "\"${properties.getProperty("BASE_URL")}\"")
+        buildConfigField(
+            "String",
+            "KAKAO_API_URL",
+            "\"${properties.getProperty("KAKAO_API_URL")}\""
+        )
+        buildConfigField(
+            "String",
+            "KAKAO_API_KEY",
+            "\"${properties.getProperty("KAKAO_API_KEY")}\""
+        )
     }
 
     buildTypes {
